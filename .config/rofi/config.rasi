@@ -1,0 +1,6 @@
+configuration {
+    modi: "drun,run,ssh,combi,window";
+	theme: "launcher";
+    combi-modi: "drun";
+    icon-theme: "Papirus";
+}
