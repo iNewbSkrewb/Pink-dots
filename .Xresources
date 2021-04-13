@@ -1,0 +1,153 @@
+Xcursor.theme: Breeze-White
+Xcursor.size: 16
+
+!!!!!!!!!!!!!!!!!!!!!!!!PINK
+
+! special
+*.foreground:   #cdc5e7
+*.background:   #1d1f25
+*.cursorColor:  #cdc5e7
+
+! black
+*.color0:       #1d1f25
+*.color8:       #8f89a1
+
+! red
+*.color1:       #a05ba8
+*.color9:       #a05ba8
+
+! green
+*.color2:       #e667a8
+*.color10:      #e667a8
+
+! yellow
+*.color3:       #8c32cf
+*.color11:      #8c32cf
+
+! blue
+*.color4:       #9f62d3
+*.color12:      #9f62d3
+
+! magenta
+*.color5:       #de72cb
+*.color13:      #de72cb
+
+! cyan
+*.color6:       #b8bfdb
+*.color14:      #b8bfdb
+
+! white
+*.color7:       #cdc5e7
+*.color15:      #cdc5e7
+
+!!!!!!!!!!!!!!!!!!!!!!!!
+
+! !!!!!!!!!!!!!!!!!!!!!!!NORD
+! #define nord0 #2E3440
+! #define nord1 #3B4252
+! #define nord2 #434C5E
+! #define nord3 #4C566A
+! #define nord4 #D8DEE9
+! #define nord5 #E5E9F0
+! #define nord6 #ECEFF4
+! #define nord7 #8FBCBB
+! #define nord8 #88C0D0
+! #define nord9 #81A1C1
+! #define nord10 #5E81AC
+! #define nord11 #BF616A
+! #define nord12 #D08770
+! #define nord13 #EBCB8B
+! #define nord14 #A3BE8C
+! #define nord15 #B48EAD
+! 
+! *.foreground:   #d4eff5
+! *.background:   [100]#0B0D13
+! !                ^^^ = opacity
+! *.cursorColor:  nord4
+! *fading: 5
+! *fadeColor: nord3
+! 
+! *.color0: nord1
+! *.color1: nord11
+! *.color2: nord14
+! *.color3: nord13
+! *.color4: nord9
+! *.color5: nord15
+! *.color6: nord8
+! *.color7: nord5
+! *.color8: nord3
+! *.color9: nord11
+! *.color10: nord14
+! *.color11: nord13
+! *.color12: nord9
+! *.color13: nord15
+! *.color14: nord7
+! *.color15: nord6
+! !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!Natural colors
+!!! special
+!*.foreground:   #c0b18b
+!*.background:   #1F1A16
+!*.cursorColor:  #c0b18b
+!
+!! black
+!*.color0:       #4a3637
+!*.color8:       #4a3637
+!
+!! red
+!*.color1:       #d17b49
+!*.color9:       #d17b49
+!
+!! green
+!*.color2:       #7b8748
+!*.color10:      #7b8748
+!
+!! yellow
+!*.color3:       #af865a
+!*.color11:      #af865a
+!
+!! blue
+!*.color4:       #535c5c
+!*.color12:      #535c5c
+!
+!! magenta
+!*.color5:       #775759
+!*.color13:      #775759
+!
+!! cyan
+!*.color6:       #6d715e
+!*.color14:      #6d715e
+!
+!! white
+!*.color7:       #c0b18b
+!*.color15:      #c0b18b
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+URxvt.font:  xft:TerminessTTF NF:size=12:style=Regular
+URxvt.boldFont:  xft:TerminessTTF NF:size=12:style=Bold
+URxvt.italicFont:  xft:TerminessTTF NF:size=12:style=Italic
+URxvt.boldItalicFontfont:  xft:TerminessTTF NF:size=12:style=Bold Italic
+URxvt.letterSpace: 1
+URxvt.lineSpace: 0
+URxvt.geometry: 92x24
+URxvt.internalBorder: 24
+URxvt.cursorBlink: true
+URxvt.cursorUnderline: false
+URxvt.saveLines: 1000000
+URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+URxvt.urgentOnBell: true
+URxvt.depth: 32
+URxvt.iso14755: false
+
+URxvt.perl-ext-common:  clipboard,matcher
+URxvt.clipboard.autocopy: true
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+URxvt.urlLauncher: /usr/bin/firefox
+URxvt.matcher.button: 1
+
+!!!!!!!!!!!!!!!!!!!!!!!!
