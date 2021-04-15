@@ -19,5 +19,5 @@ That being said, if you want to have a setup like mine, you'll need a few things
 | Lock Screen           | betterlockscreen  |
 
 ## Gallery (WIP)
-[Main](https://cdn.discordapp.com/attachments/635625917623828520/831319794035982336/image0.jpg)
+![Main](https://cdn.discordapp.com/attachments/635625917623828520/831319794035982336/image0.jpg)
 
