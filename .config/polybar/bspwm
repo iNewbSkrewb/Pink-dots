@@ -1,0 +1,261 @@
+[bar/top]
+monitor = DP-1
+width = 100%
+height = 20
+
+bottom = false
+fixed-center = true
+line-size = 5
+
+font-0 = Terminus:antialias=false:size=12
+font-1 = TerminessTTF Nerd Font:size=10
+font-2 = FontAwesome5:pixelsize=10
+font-3 = Noto Color Emoji:pixelsize=16:scale=12
+
+enable-ipc = true
+cursor-click = pointer
+scroll-up = bspc desktop -f prev.local
+scroll-down = bspc desktop -f next.local
+wm-restack = bspwm
+
+modules-left = title
+modules-right = name
+
+background = #1d1f25
+foreground = #b48ead
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[bar/bottom]
+monitor = DP-1
+bottom = true
+fixed-center = true
+cursor-click = pointer
+
+width = 99%
+height = 36
+
+offset-x = 0.5%
+offset-y = 0.5%
+
+background = #00000000
+foreground = #cdc5e7
+
+underline-size = 2
+underline-color = #f5f5f5
+
+font-0 = Iosevka Nerd Font:size=9;3
+font-1 = FontAwesome5:pixelsize=10;3
+font-2 = Iosevka Nerd Font:size=12;3
+
+tray-position = right
+tray-padding = 0
+tray-background = "#1d1f25"
+
+modules-left = launcher sep workspaces sep firefox discord term sep mpd
+modules-right = volume sep temp cpu mem sep date time sep
+
+wm-restack = bspwm
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[module/title]
+type = internal/xwindow
+format = <label>
+format-padding = 2
+label = %title%
+label-maxlen = 125
+
+[module/volume]
+type = internal/pulseaudio
+
+format-volume = <ramp-volume> <label-volume>
+format-volume-padding = 2
+format-volume-background = "#ac82a4"
+format-volume-foreground = "#1d1f25"
+
+label-volume = %percentage%%
+label-muted = "婢 %{F#e667a8} Muted"
+label-muted-padding = 2
+label-muted-background = 1d1f25
+label-muted-foreground = b48ead
+
+ramp-volume-font = 3
+ramp-volume-0 = "奄 "
+ramp-volume-1 = "奔 "
+ramp-volume-2 = "奔 "
+ramp-volume-3 = "墳 "
+ramp-volume-4 = "墳 "
+ramp-volume-5 = "  "
+ramp-volume-6 = "  "
+
+[module/date]
+type = internal/date
+label = "%{T3} %{T-} %date% "
+label-padding = 1
+label-background = ac82a4
+label-foreground = 1d1f25
+date = %A, %B %d
+date-alt = %F
+
+[module/time]
+type = internal/date
+label = %date%
+date = %T
+date-alt = %l:%M %p
+label-padding = 2
+label-background = 1d1f25
+label-foreground = e667a8
+
+[module/launcher]
+type = custom/text
+content = " "
+content-foreground = b48ead
+content-background = 1d1f25
+content-padding = 2
+
+click-left = ~/scripts/rofi/launcher.sh
+
+[module/name]
+type = custom/script
+exec = whoami
+format = <label>
+format-foreground = #e667a8
+format-padding = 2
+click-left = ~/scripts/rofi/powermenu.sh
+
+[module/mpd]
+type = internal/mpd
+host = "localhost"
+port = 6600
+interval = 1
+
+format-online = <icon-prev><toggle><icon-next><label-song>
+format-offline = <label-offline>
+
+label-song = %artist% - %title% 
+label-song-maxlen = 100
+label-song-ellipsis = true
+label-song-padding = 2
+label-song-background = "#1d1f25"
+label-song-foreground = "#b48ead"
+
+icon-play = 契
+icon-play-foreground = #1d1f25
+icon-play-background = #ac82a4
+icon-play-padding = 2
+icon-play-font = 3
+icon-pause = 
+icon-pause-foreground = #1d1f25
+icon-pause-background = #ac82a4
+icon-pause-padding = 2
+icon-pause-font = 3
+icon-prev = 玲
+icon-prev-foreground = #1d1f25
+icon-prev-background = #ac82a4
+icon-prev-padding = 2
+icon-prev-font = 3
+icon-next = 怜 
+icon-next-foreground = #1d1f25
+icon-next-background = #ac82a4
+icon-next-padding = 2
+icon-next-font = 3
+
+label-offline = Offline
+label-offline-background = #1d1f25
+label-offline-padding = 2
+format-offline-prefix = 
+format-offline-prefix-background = "#ac82a4"
+format-offline-prefix-foreground = "#1d1f25"
+format-offline-prefix-padding = 2
+
+
+[module/workspaces]
+type = internal/bspwm
+
+format-background = "#1d1f25"
+format-foreground = "#9f62d3"
+
+label-focused-background = "#b48ead"
+label-focused-foreground = "#1d1f25"
+
+label-occupied-background = "#1d1f25"
+label-occupied-foreground = "#e667a8"
+
+label-empty-background = "#1d1f25"
+label-empty-foreground = "#b48ead"
+
+label-focused-padding = 2
+label-urgent-padding = 2
+label-occupied-padding = 2
+label-empty-padding = 2
+
+[module/sep]
+type = custom/text
+content= "  "
+
+[module/cpu]
+type = internal/cpu
+interval = 1
+format = <label>
+format-prefix = "﬙ "
+format-prefix-padding = 2
+format-prefix-font = 3
+format-suffix = "  "
+format-background = ac82a4
+format-foreground = "#1d1f25"
+
+[module/mem]
+type = internal/memory
+interval = 1
+format = <label>
+label = %mb_used%
+format-prefix = "  "
+format-prefix-font = 3
+format-padding = 2
+format-background = ac82a4
+format-foreground = 1d1f25
+
+[module/firefox]
+type = custom/text
+content = " "
+content-foreground = b48ead
+content-background = 1d1f25
+content-padding = 2
+click-left = firefox
+
+[module/discord]
+type = custom/text
+content = "ﭮ "
+content-foreground = b48ead
+content-background = 1d1f25
+content-padding = 2
+click-left = discord
+
+[module/term]
+type = custom/text
+content = " "
+content-foreground = b48ead
+content-background = 1d1f25
+content-padding = 2
+click-left = urxvt
+
+[module/temp]
+type = internal/temperature
+interval = 0.5
+thermal-zone = 0
+format = <ramp> <label>
+
+label = %temperature-c%
+
+base-temperature = 20
+warn-temperature = 80
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-3 = 
+ramp-4 = 
+ramp-font = 3
+
+format-background = ac82a4
+format-foreground = 1d1f25
+format-padding = 2
