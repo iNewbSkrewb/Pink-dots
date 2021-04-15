@@ -16,8 +16,9 @@ That being said, if you want to have a setup like mine, you'll need a few things
 | File Manager          | Pcmanfm           |
 | Nerd Fonts            | Terminess,Iosevka |
 | Web Browser           | Firefox           |
-| Notification daemon   | Dunst             |
+| Notification Daemon   | Dunst             |
 | Lock Screen           | betterlockscreen  |
+| Hotkey Daemon         | sxhkd             |
 
 ## Gallery (WIP)
 ![Main](https://cdn.discordapp.com/attachments/635625917623828520/831319794035982336/image0.jpg)
