@@ -1,4 +1,4 @@
-#iNewbSkrewb's Pink Dots
+# iNewbSkrewb's Pink Dots
 These are just the files to my simple rice, the result of a pink and purple phase.
 
 Things are pretty simple right now, but they should expand over time. The point of this repository however is not to allow easy installation, rather think of it as a part of a gallery for my rices.  
