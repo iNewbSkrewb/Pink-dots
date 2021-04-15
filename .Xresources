@@ -1,11 +1,15 @@
 Xcursor.theme: Breeze-White
 Xcursor.size: 16
 
+Xft.hinting: 1
+Xft.dpi: 93
+Xft.lcdfilter: lcddefault
+
 !!!!!!!!!!!!!!!!!!!!!!!!PINK
 
 ! special
 *.foreground:   #cdc5e7
-*.background:   #1d1f25
+*.background:   [90]#1d1f25
 *.cursorColor:  #cdc5e7
 
 ! black
